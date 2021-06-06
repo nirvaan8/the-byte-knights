@@ -19,19 +19,19 @@ body {
         
         .container {
             position: absolute;
-            height: 100%;
+            height: auto;
             width: 100%;
         }
     }
 }
 
 body::-webkit-scrollbar {
-    background-color: #ff0054;
+    background-color: $pink;
     width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #fad390;
+    background-color: $yellow;
     width: 10px;
     border-radius: 15px;
 }

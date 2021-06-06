@@ -3,15 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { TweenMax } from "gsap";
 
 function Home() {
-    
-    const [offSetY, setOffSetY] = useState(0);
-    
-    const handleScroll = () => {
-        if(window.pageYOffset > 120){
-            
-        }   
-        setOffSetY(window.pageYOffset)
-    };
     const handleMouseMove = (e) => {
         const pos = document.documentElement;
         pos.style.setProperty('--x', e.clientX + 'px')
@@ -19,7 +10,6 @@ function Home() {
     }
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
 
         // loading animation
         TweenMax.from(
@@ -59,7 +49,6 @@ function Home() {
         document.documentElement.addEventListener('mousemove' , handleMouseMove);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
             document.documentElement.removeEventListener('mousemove' , handleMouseMove);
         }
     }, []);
@@ -70,23 +59,16 @@ function Home() {
                 <div className="art">
                     <div className="rect"></div>
                     <div className="rect"></div>
-                    <div className="circle circle-1" style={
-                        {
-                            transform: `(${offSetY * 0.5})px`
-                        }
-                    }></div>
-                    <div className="circle circle-2" style={
-                        {
-                            transform: `(${offSetY * 0.5})px`
-                        }
-                    }></div>
+                    <div className="circle circle-1"></div>
+                    <div className="circle circle-2"></div>
                     <div className='bubble'></div>
                 </div>
                 <div className='content'>
-                    <h1 className="animate-stagger">Lorem ipsum dolor sit amet</h1>
-                    <p className="animate-stagger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum nam quasi quos officiis odio placeat earum laudantium voluptates illum?</p>
-                    {/* for debuging (onclick on the button) */}
-                    <button className="animate-stagger" onClick={() => console.log(offSetY)}>Get started</button>
+                    <h1 className="animate-stagger">The Byte Knights</h1>
+                    <p className="animate-stagger">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum nam quasi quos officiis odio placeat earum laudantium voluptates illum?
+                    </p>
+                    <button className="animate-stagger">Get started</button>
                 </div>
             </main>
             <section></section>
