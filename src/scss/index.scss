@@ -1,0 +1,28 @@
+@import './helpers/variables';
+
+// base
+@import './base/colors';
+@import './base/base';
+@import './base/typography';
+
+// components styles
+@import './components/buttons';
+@import './components/links';
+@import './components/inputs';
+
+
+.container{
+
+    section {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    // pages
+    @import './pages/home';
+    @import './pages/contact';
+
+    // layouts
+    @import './layout/header';
+
+}

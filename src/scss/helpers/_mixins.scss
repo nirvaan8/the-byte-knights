@@ -1,0 +1,10 @@
+@mixin buttonStyle($color) {
+    border: 1.5px solid $color;
+    background-color: $color;
+    color: white;
+    
+    &:hover{
+        color: $color;
+        background: transparent;
+    }
+}
