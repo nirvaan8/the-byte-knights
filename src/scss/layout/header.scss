@@ -12,13 +12,8 @@
     z-index: 4;
 
     .logo {
-        color: white;
-        font-size: 2.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-family: Poppins;
         line-height: 70px;
+        height: 60px;
         object-fit: cover;
     }
 
@@ -34,10 +29,6 @@
                 font-size: 1.6rem;
                 padding: 0 10px;
                 cursor: pointer;
-                -webkit-transition: .7s background-color ease;
-                -moz-transition: .7s background-color ease;
-                -ms-transition: .7s background-color ease;
-                -o-transition: .7s background-color ease;
                 transition: .7s background-color ease;
 
                 &:hover {
@@ -69,10 +60,6 @@
         background-color: $grey;
         width: 100%;
         text-align: center;
-        -webkit-transition: .8s left ease;
-        -moz-transition: .8s left ease;
-        -ms-transition: .8s left ease;
-        -o-transition: .8s left ease;
         transition: .8s left ease;
     }
 
