@@ -64,7 +64,9 @@ function Home() {
                     <div className='bubble'></div>
                 </div>
                 <div className='content'>
-                    <h1 className="animate-stagger">The Byte Knights</h1>
+                    <h1 className="animate-stagger">
+                        &lt;The Byte Knights /&gt;
+                    </h1>
                     <p className="animate-stagger">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum nam quasi quos officiis odio placeat earum laudantium voluptates illum?
                     </p>

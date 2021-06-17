@@ -1,0 +1,52 @@
+.about {
+    section {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+            padding-bottom: 0;
+
+            h1 {
+                font-size: 40px;
+                position: relative;
+                font-weight: 500;
+                margin-bottom: 30px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 230px;
+                    height: $sm-height;
+                    background-color: $pink;
+                }
+            }
+        }
+
+        .waves {
+            position: relative;
+            margin-top: 100px;
+
+            img {
+                position: absolute;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .about section .waves img{
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    .about section .waves img{
+        top: -20px;
+    }
+}
