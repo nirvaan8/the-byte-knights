@@ -55,9 +55,9 @@ function Footer() {
                                 </svg>
                             </span>
                             <span>
-                                49 Smith St.
-                                <br />
-                                Saint Cloud, MN 56301
+                            Shaheed Captain Anuj Nayyar Marg,
+                            Block B, BB Block, Janakpuri,
+                            New Delhi, Delhi 110058
                             </span>
                         </li>
                         <li>

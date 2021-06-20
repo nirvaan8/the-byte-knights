@@ -1,6 +1,8 @@
 .about {
     section {
+        overflow: hidden;
         padding: 50px 0;
+        padding-bottom: 0;
         display: flex;
         flex-direction: column;
 
@@ -29,24 +31,41 @@
         }
 
         .waves {
+            height: 100px;
+            width: 100%;
             position: relative;
             margin-top: 100px;
 
-            img {
+            // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
+
+            .wave {
                 position: absolute;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: 100% 100px;
+                transform: scale(3.6);
+
+                &.wave1{
+                    background-image: url('../../assets/pink-wave.svg');
+                }
+
+                &.wave2{
+                    background-image: url('../../assets/yellow-wave.svg');
+                }
             }
         }
     }
 }
 
-@media only screen and (max-width: 770px){
-    .about section .waves img{
+@media only screen and (max-width: 770px) {
+    .about section .waves img {
         top: -50px;
     }
 }
 
-@media only screen and (max-width: 465px){
-    .about section .waves img{
+@media only screen and (max-width: 465px) {
+    .about section .waves img {
         top: -20px;
     }
 }

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 import { TweenMax } from "gsap";
 
@@ -65,15 +66,24 @@ function Home() {
                 </div>
                 <div className='content'>
                     <h1 className="animate-stagger">
-                        &lt;The Byte Knights /&gt;
+                        The Byte Knights
                     </h1>
                     <p className="animate-stagger">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum nam quasi quos officiis odio placeat earum laudantium voluptates illum?
                     </p>
-                    <button className="animate-stagger">Get started</button>
+                    <button className="animate-stagger">
+                        <Link to="/about">
+                            Read More
+                        </Link>
+                    </button>
                 </div>
             </main>
-            <section></section>
+            <section className="lastest-event">
+                <h1>Our lastest Event</h1>
+                <img src="https://dummyimage.com/720x600" alt=""/>
+                <h3>Events Name</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quisquam vero adipisci exercitationem, repellat repudiandae inventore quod magnam tenetur sint rerum. Perferendis consequuntur aspernatur nihil? Voluptates dolore mollitia libero, deleniti deserunt harum. Quis fuga quibusdam molestias voluptate earum totam quisquam minus vel sequi similique eius facere unde repellat iusto, temporibus recusandae ipsam reprehenderit cum quae vero! Voluptas mollitia aut illum!</p>
+            </section>
         </div>
     )
 }
