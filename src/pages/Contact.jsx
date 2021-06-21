@@ -6,14 +6,17 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [msg, setMsg] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // !         DO IT VIA API 
         // TODO      AND NOT INSTALL EMAILJS-COM THROUGH CLI(VIA YARN OR NPM)
 
-        const data = { name, email, msg }
 
-        console.log(data);
+        const name = 'Naman';
+        const email = 'namanarora1022@gmail.com';
+        const msg = 'This is my message';
+
+        const subject = `Message from ${name}`;
     }
 
     return (
@@ -53,4 +56,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default Contact; 
