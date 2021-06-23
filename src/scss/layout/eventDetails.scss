@@ -1,0 +1,62 @@
+@import '../base/colors';
+@import '../base/base';
+@import '../helpers/variables';
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+
+    img {
+        object-fit: cover;
+        height: 60vh;
+    }
+
+    div {
+        padding-left: 30px;
+        max-width: 500px;
+
+        h1 {
+            font-size: 2.7rem;
+            margin-bottom: 30px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 205px;
+                height: $sm-height;
+                background-color: $pink;
+            }
+        }
+
+        button{
+            margin-top: 30px;
+            background-color: $pink;
+            color: white;
+
+            &:hover{
+                background-color: #f00050;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1170px){
+    .event-details{
+        flex-direction: column;
+
+        > div{
+            margin-top: 30px;
+            padding-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 761px){
+    .event-details img{
+        height: 200px;
+    }
+}

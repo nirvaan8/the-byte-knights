@@ -17,17 +17,17 @@ function Footer() {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus, tenetur cupiditate fugiat expedita placeat maiores dicta, debitis aperiam ipsa et nostrum. Beatae harum in exercitationem officiis? Tempora, aliquam dignissimos!</p>
                     <ul className="sci">
                         <li>
-                            <a href="https://www.facebook.com/profile.php?id=100069116769192" target="_blank">
+                            <a href="https://www.facebook.com/profile.php?id=100069116769192" target="_blank" rel="noreferrer">
                                 <img src={fb} alt="facebook" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/thebyteknights/" target="_blank">
+                            <a href="https://www.instagram.com/thebyteknights/" target="_blank" rel="noreferrer">
                                 <img src={insta} alt="instagram" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCqDxCutv0nzcx0uZrFM76lA" target="_blank">
+                            <a href="https://www.youtube.com/channel/UCqDxCutv0nzcx0uZrFM76lA" target="_blank" rel="noreferrer">
                                 <img src={yt} alt="youtube" />
                             </a>
                         </li>

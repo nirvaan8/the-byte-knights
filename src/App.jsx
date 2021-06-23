@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // COMPONENTS
 import Header from './components/Header';
 import Footer from './components/Footer';
+import EventDetails from './components/Event/EventDetails';
 
 // PAGES
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -17,21 +19,12 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/about'>
-            <About/>
-          </Route>
-          <Route path='/contact'>
-            <Contact />
-          </Route>
-          <Route path='/events'>
-            <h1>Events</h1>
-          </Route>
-          <Route path='*'>
-            <NotFound/>
-          </Route>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/events' component={Events} />
+          <Route path='/events/:id' component={EventDetails} />
+          <Route path='*' component={NotFound} />
         </Switch>
         <Footer />
       </Router>

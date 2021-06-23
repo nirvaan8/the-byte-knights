@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom'
 
 import { TweenMax } from "gsap";
 
+import useFetch from '../hooks/useFetch';
+
 function Home() {
+
+    const { data: events, isPending, error } = useFetch('http://localhost:5000/api/events');
+
     const handleMouseMove = (e) => {
         const pos = document.documentElement;
         pos.style.setProperty('--x', e.clientX + 'px')
@@ -47,10 +52,10 @@ function Home() {
         )
 
 
-        document.documentElement.addEventListener('mousemove' , handleMouseMove);
+        document.documentElement.addEventListener('mousemove', handleMouseMove);
 
         return () => {
-            document.documentElement.removeEventListener('mousemove' , handleMouseMove);
+            document.documentElement.removeEventListener('mousemove', handleMouseMove);
         }
     }, []);
 
@@ -79,10 +84,24 @@ function Home() {
                 </div>
             </main>
             <section className="lastest-event">
-                <h1>Our lastest Event</h1>
-                <img src="https://dummyimage.com/720x600" alt=""/>
-                <h3>Event Name</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quisquam vero adipisci exercitationem, repellat repudiandae inventore quod magnam tenetur sint rerum. Perferendis consequuntur aspernatur nihil? Voluptates dolore mollitia libero, deleniti deserunt harum. Quis fuga quibusdam molestias voluptate earum totam quisquam minus vel sequi similique eius facere unde repellat iusto, temporibus recusandae ipsam reprehenderit cum quae vero! Voluptas mollitia aut illum!</p>
+                {error &&
+                    <div className="error">
+                        <h1>Some Error occured 😭</h1>
+                    </div>
+                }
+                {isPending &&
+                    <div className="pending">
+                        <h1>Loading.... </h1>
+                    </div>
+                }
+                {events &&
+                    <>
+                        <h1>Our lastest Event</h1>
+                        <img src={events[0].img} alt="" />
+                        <h3>{events[0].title}</h3>
+                        <p>{events[0].body}</p>
+                    </>
+                }
             </section>
         </div>
     )
