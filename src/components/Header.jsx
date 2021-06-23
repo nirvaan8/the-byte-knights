@@ -21,7 +21,9 @@ function Header() {
 
     return (
         <header className="navbar">
-            <img className="logo" src={logo} alt="logo" />
+            <a href="/">
+                <img className="logo" src={logo} alt="logo" />
+            </a>
             <div className="navbar-nav">
                 <ul className="nav-ul" ref={navUl}>
                     <li className="nav-item">

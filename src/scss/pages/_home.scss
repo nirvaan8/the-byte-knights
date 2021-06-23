@@ -177,3 +177,9 @@ $sq-side: 350px;
         text-shadow: 1.5px 1.5px black;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .home section img {
+        height: 200px;
+    }
+}
