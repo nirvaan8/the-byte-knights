@@ -1,0 +1,40 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 4.5rem;
+        position: relative;
+        margin-bottom: 50px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 220px;
+            height: $sm-height;
+            background-color: $pink;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    button{
+        background-color: $pink;
+        color: white;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 638px){
+    .not-found img{
+        height: 200px;
+    }
+}

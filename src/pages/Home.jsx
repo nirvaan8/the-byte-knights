@@ -81,7 +81,7 @@ function Home() {
             <section className="lastest-event">
                 <h1>Our lastest Event</h1>
                 <img src="https://dummyimage.com/720x600" alt=""/>
-                <h3>Events Name</h3>
+                <h3>Event Name</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, quisquam vero adipisci exercitationem, repellat repudiandae inventore quod magnam tenetur sint rerum. Perferendis consequuntur aspernatur nihil? Voluptates dolore mollitia libero, deleniti deserunt harum. Quis fuga quibusdam molestias voluptate earum totam quisquam minus vel sequi similique eius facere unde repellat iusto, temporibus recusandae ipsam reprehenderit cum quae vero! Voluptas mollitia aut illum!</p>
             </section>
         </div>
