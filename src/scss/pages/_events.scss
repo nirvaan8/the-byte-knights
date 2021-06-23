@@ -8,6 +8,7 @@
 
     >h1 {
         font-size: 4rem;
+        font-weight: 500;
         position: relative;
         margin-bottom: 60px;
 
@@ -20,17 +21,6 @@
             height: $sm-height;
             background-color: $pink;
         }
-    }
-
-    .error {
-        font-size: 1.7rem;
-        color: #d63031;
-        height: 70vh;
-    }
-
-    .pending {
-        font-size: 1.5rem;
-        height: 70vh;
     }
 
     .events-list {

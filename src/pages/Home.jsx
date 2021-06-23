@@ -95,12 +95,12 @@ function Home() {
                     </div>
                 }
                 {events &&
-                    <>
-                        <h1>Our lastest Event</h1>
+                    <div className='loaded'>
+                        <h1>&lt;Our lastest Event/&gt;</h1>
                         <img src={events[0].img} alt="" />
                         <h3>{events[0].title}</h3>
                         <p>{events[0].body}</p>
-                    </>
+                    </div>
                 }
             </section>
         </div>

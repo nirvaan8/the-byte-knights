@@ -25,3 +25,15 @@
     @import './pages/events';
     @import './pages/notFound';
 }
+
+
+.error {
+    font-size: 1.7rem;
+    color: #d63031;
+    height: 70vh;
+}
+
+.pending {
+    font-size: 1.5rem;
+    height: 70vh;
+}
