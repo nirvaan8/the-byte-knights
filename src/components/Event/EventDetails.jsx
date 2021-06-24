@@ -1,4 +1,4 @@
-import React , { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import '../../scss/layout/eventDetails.scss';
 
@@ -16,11 +16,13 @@ const EventDetails = ({ match }) => {
 
     useEffect(() => {
         fetchEvent();
-    } , [])
+    }, [])
 
     return (
         <div className='event-details'>
-            <img src={event.img} alt={event.title} />
+            <div className="imgBox">
+                <img src={event.img} alt={event.title} />
+            </div>
             <div>
                 <h1>{event.title}</h1>
                 <p>{event.body}</p>
