@@ -8,15 +8,27 @@ function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // !         DO IT VIA API 
-        // TODO      AND NOT INSTALL EMAILJS-COM THROUGH CLI(VIA YARN OR NPM)
+        const data = {name , email , msg}
 
+        const url = 'http://localhost:5000/api/contact';
 
-        const name = 'Naman';
-        const email = 'namanarora1022@gmail.com';
-        const msg = 'This is my message';
+        fetch(url , {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then((res) => {
 
-        const subject = `Message from ${name}`;
+            if(res.ok){
+                console.log(res);
+            }else{
+                console.log(res);
+            }
+            
+        }).catch((error) => {
+            console.log(error);
+        });
     }
 
     return (
