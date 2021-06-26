@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+// SCSS
 import '../../scss/layout/eventDetails.scss';
 
+// Animation
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

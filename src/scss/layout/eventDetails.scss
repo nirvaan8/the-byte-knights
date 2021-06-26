@@ -9,7 +9,7 @@
     padding: 60px 100px;
 
     .imgBox {
-        img{
+        img {
             height: 370px;
             min-width: 370px;
             object-fit: cover;
@@ -66,7 +66,7 @@
 }
 
 @media only screen and (max-width: 604px) {
-    .event-details img{
+    .event-details img {
         display: none;
     }
 }

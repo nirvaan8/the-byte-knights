@@ -1,12 +1,13 @@
-textarea , input {
+textarea,
+input {
     padding: 7px 15px;
     outline: none;
     border: none;
-    background-color: $light-grey; 
+    background-color: $light-grey;
     border-radius: 7px;
 }
 
-label{
+label {
     font-size: 1.5rem;
     display: block;
 }

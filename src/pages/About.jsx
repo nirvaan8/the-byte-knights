@@ -1,9 +1,6 @@
 import React from 'react';
 
 function About() {
-
-    // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
-
     return (
         <div className='about'>
             <section>

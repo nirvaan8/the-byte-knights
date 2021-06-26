@@ -1,6 +1,6 @@
 import React from 'react';
 
-// images
+// IMAGES
 import fb from '../assets/fb.svg';
 import insta from '../assets/insta.svg';
 import yt from '../assets/yt.svg';

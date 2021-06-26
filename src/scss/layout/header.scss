@@ -41,6 +41,7 @@
                 }
             }
         }
+
         .hamburger {
             display: none;
         }
@@ -82,7 +83,7 @@
     .navbar {
         padding: 0 30px;
 
-        .navbar-nav .nav-ul .nav-item:hover{
+        .navbar-nav .nav-ul .nav-item:hover {
             background-color: $pink;
         }
     }

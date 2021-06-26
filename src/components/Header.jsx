@@ -1,6 +1,10 @@
 import React, { useState, useRef } from 'react'
 import { Link } from "react-router-dom";
+
+// IMAGES
 import logo from '../assets/logo.png';
+
+// SCSS
 import '../scss/layout/header.scss';
 
 function Header() {
