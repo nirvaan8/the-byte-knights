@@ -6,29 +6,49 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [msg, setMsg] = useState('');
 
-    const handleSubmit = async (e) => {
+    // TODO https://www.youtube.com/watch?v=_JIhVxAJ56Q
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const data = {name , email , msg}
+        
+        const body = `Name: ${name} <br> Email: ${email} <br> Message: ${msg} <br> `
 
-        const url = 'http://localhost:5000/api/contact';
-
-        fetch(url , {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then((res) => {
-
-            if(res.ok){
-                console.log(res);
+        window.Email.send({
+            Host : "smtp.gmail.com",
+            Username : "namanarora1022v2@gmail.com",
+            Password : "password.........",
+            To : 'byteknights.mms@gmail.com',
+            From : "you@isp.com",
+            Subject : `New Email on contact form from ${name}`,
+            Body : body
+        }).then(message =>{
+            if(message === 'OK'){
+                alert('Thank you your email has been sent')
             }else{
-                console.log(res);
+                console.error(message)
+                alert('There is error at sending message')
             }
-            
-        }).catch((error) => {
-            console.log(error);
         });
+
+        // const url = 'http://localhost:5000/api/contact';
+
+        // fetch(url , {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(data)
+        // }).then((res) => {
+
+        //     if(res.ok){
+        //         console.log(res);
+        //     }else{
+        //         console.log(res);
+        //     }
+            
+        // }).catch((error) => {
+        //     console.log(error);
+        // });
     }
 
     return (
