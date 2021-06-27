@@ -11,6 +11,8 @@ import useFetch from '../hooks/useFetch';
 
 function Home() {
 
+    // TODO LIGHT THEME MAYBE
+
     const { data: events, isPending, error } = useFetch('http://localhost:5000/api/events');
 
     useEffect(() => {

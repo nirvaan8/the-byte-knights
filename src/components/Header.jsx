@@ -9,6 +9,10 @@ import '../scss/layout/header.scss';
 
 function Header() {
 
+    // TODO 1) LIGHT THEME
+    // TODO 2) SCSS FILE LINKED TO index.scss file and not to be imported in this component( for all components )
+    // TODO 3) GIVE AND ID to components div to scope the scss 🤔
+
     const [open, setOpen] = useState(false);
 
     const navUl = useRef(null);
