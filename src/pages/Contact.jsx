@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+// Animation
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 // Images
 import contactSvg from '../assets/contact.svg';
 
 function Contact() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000
+        });
+    }, [])
+
     return (
         <div className='contact'>
             <section>
-                <div className="left">
+                <div className="left" data-aos="fade-right" data-aos-delay="400">
                     <h1>Want to talk to us ?</h1>
                     <p><span>byteknights</span>.mms@gmail.com</p>
                     <img src={contactSvg} alt="" />
                 </div>
-                <div className="right">
+                <div className="right" data-aos="fade-up" data-aos-delay="600">
                     {/* fb */}
                     <a href="https://www.facebook.com/profile.php?id=100069116769192" target="_blank">
                         <div className="icon">
