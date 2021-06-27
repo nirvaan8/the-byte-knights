@@ -66,13 +66,18 @@ function Home() {
                         <h1>Loading.... </h1>
                     </div>
                 }
-                {events &&
+                {events && events.length ?  (
                     <div className='loaded'>
                         <h1 data-aos="fade-up">&lt;Our lastest Event/&gt;</h1>
                         <img data-aos="fade-right" data-aos-delay="600" src={events[0].img} alt="" />
                         <h3 data-aos="fade-left" data-aos-delay="200">{events[0].title}</h3>
                         <p data-aos="fade-right" data-aos-delay="900">{events[0].body}</p>
                     </div>
+                ): (
+                    <div className='no-event'>
+                        <h1>No Event Right now 😥</h1>
+                    </div>
+                )
                 }
             </section>
         </div>

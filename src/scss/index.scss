@@ -41,3 +41,16 @@
     font-size: 1.5rem;
     height: 70vh;
 }
+
+.no-event{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1{
+        font-weight: 500;
+        font-size: 3rem;
+        position: relative;
+        margin-bottom: 30px;
+    }
+}

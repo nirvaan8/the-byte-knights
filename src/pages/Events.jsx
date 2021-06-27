@@ -1,4 +1,4 @@
-import React , { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Components
 import Event from '../components/Event/Event';
@@ -17,10 +17,10 @@ const Events = () => {
         Aos.init({
             duration: 1000
         });
-    } , [])
+    }, [])
 
     return (
-        <div className='events'>
+        <section className='events'>
             <h1>&lt;Events/&gt;</h1>
             {error &&
                 <div className="error">
@@ -32,14 +32,19 @@ const Events = () => {
                     <h1>Loading.... </h1>
                 </div>
             }
-            {events &&
-                <div className="events-list" data-aos="fade-up" data-aos-delay="600">
+            {events && events.length ?
+                (<div className="events-list" data-aos="fade-up" data-aos-delay="600">
                     {events.map(event => (
                         <Event event={event} key={event.id} />
                     ))}
-                </div>
+                </div>)
+                : (
+                    <div className="no-event">
+                        <h1 className='pending'>No Events right now 😥</h1>
+                    </div>
+                )
             }
-        </div>
+        </section>
     )
 }
 
