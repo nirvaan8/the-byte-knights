@@ -4,14 +4,10 @@ import { Link } from "react-router-dom";
 // IMAGES
 import logo from '../assets/logo.png';
 
-// SCSS
-import '../scss/layout/header.scss';
-
 function Header() {
 
+    // ! I have removed sticky navbar idk why
     // TODO 1) LIGHT THEME
-    // TODO 2) SCSS FILE LINKED TO index.scss file and not to be imported in this component( for all components )
-    // TODO 3) GIVE AND ID to components div to scope the scss 🤔
 
     const [open, setOpen] = useState(false);
 

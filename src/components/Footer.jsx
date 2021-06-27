@@ -5,9 +5,6 @@ import fb from '../assets/fb.svg';
 import insta from '../assets/insta.svg';
 import yt from '../assets/yt.svg';
 
-// SCSS
-import '../scss/layout/footer.scss';
-
 function Footer() {
     return (
         <footer className='footer'>

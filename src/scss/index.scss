@@ -24,8 +24,12 @@
     @import './pages/about';
     @import './pages/events';
     @import './pages/notFound';
-}
 
+    // components
+    @import './layout/header';
+    @import './layout/footer';
+    @import './layout/eventDetails';
+}
 
 .error {
     font-size: 1.7rem;
