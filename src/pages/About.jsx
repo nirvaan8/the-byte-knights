@@ -7,7 +7,7 @@ function About() {
 
     useEffect(() => {
         Aos.init({
-            duration: 1000,
+            duration: 700,
         })
     }, [])
 
