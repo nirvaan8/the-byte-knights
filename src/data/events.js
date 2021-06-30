@@ -9,4 +9,7 @@
     body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fuga et similique, doloribus aperiam, possimus autem minus optio perferendis quaerat provident? Aliquid dolor, repudiandae numquam doloremque a praesentium aliquam quas sapiente nam assumenda recusandae quibusdam nisi officia possimus nihil delectus quos fugiat, laudantium consequatur cumque sed architecto et? Labore, consectetur similique corrupti, soluta aliquid accusantium dolor ea et laborum debitis veritatis ad. Eligendi, veritatis consequuntur! Id rerum quos at veritatis eaque assumenda consequatur libero odio deleniti minima saepe nemo ad, dignissimos doloribus voluptatibus sed laudantium quas minus dolore ullam eius non? Qui nemo tempore eaque ratione aspernatur excepturi, aliquam, unde cupiditate ipsa rerum nesciunt eligendi harum alias quia fuga reiciendis consequuntur error odit eius.',
     formLink: "https://forms.gle/963Qt8gYgsrZPQbE9"
 } */
-export default []
+
+const events = []
+
+export default events;
