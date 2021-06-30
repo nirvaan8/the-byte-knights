@@ -9,3 +9,4 @@
     * Past Events
 * Light Theme on main page and header also
 * Remake main page
+* Fix url problem on netlify
