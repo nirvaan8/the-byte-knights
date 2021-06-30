@@ -7,15 +7,12 @@ import Event from '../components/Event/Event';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-// Hooks
-// import useFetch from '../hooks/useFetch';
-
 // Context
 import { EventsContext } from '../context/EventsContext'
 
 const Events = () => {
     
-    const [events, setEvents] = useContext(EventsContext);
+    const events = useContext(EventsContext)[0];
 
     useEffect(() => {
         Aos.init({
@@ -25,7 +22,7 @@ const Events = () => {
 
     return (
         <section className='events'>
-            <h1>&lt;Events/&gt;</h1>
+            <h1 data-aos="fade-down">&lt;Events/&gt;</h1>
             {/* {error &&
                 <div className="error">
                     <h1>Some Error occured 😭</h1>
@@ -38,7 +35,7 @@ const Events = () => {
             } */}
             {events && !events.length &&
                 <div className="no-event">
-                    <h1 className='pending'>No Events right now 😥</h1>
+                    <h1 data-aos="fade-right" data-aos-delay="600" className='pending'>No Events right now 😥</h1>
                 </div>
             }
             {events &&
