@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Images
 import fb from '../assets/fb.svg';
@@ -34,12 +35,12 @@ function Footer() {
                 <div className="sec quick-links">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/events">Events</Link></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100069116769192">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/thebyteknights/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqDxCutv0nzcx0uZrFM76lA">Youtube</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
                 <div className="sec contact">
@@ -52,9 +53,9 @@ function Footer() {
                                 </svg>
                             </span>
                             <span>
-                            Shaheed Captain Anuj Nayyar Marg,
-                            Block B, BB Block, Janakpuri,
-                            New Delhi, Delhi 110058
+                                Shaheed Captain Anuj Nayyar Marg,
+                                Block B, BB Block, Janakpuri,
+                                New Delhi, Delhi 110058
                             </span>
                         </li>
                         <li>
