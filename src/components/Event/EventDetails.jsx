@@ -1,24 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 
 // Animation
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const EventDetails = ({ match }) => {
+// Context
+import { EventsContext } from '../../context/EventsContext';
 
-    const [event, setEvent] = useState({});
+const EventDetails = ({ match }) => {
 
     const id = match.params.id;
 
-    // TODO use usefetch hook
-    const fetchEvent = async () => {
-        const res = await fetch(`http://localhost:5000/api/events/get?id=${id}`);
-        const data = await res.json();
-        setEvent(data);
-    }
+    const event  = useContext(EventsContext)[0][id - 1]
 
     useEffect(() => {
-        fetchEvent();
         Aos.init({
             duration: 700
         });

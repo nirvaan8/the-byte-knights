@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 // Animation
@@ -6,14 +6,15 @@ import Parallax from 'react-rellax';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-// Hooks
-import useFetch from '../hooks/useFetch';
+// Context
+import { EventsContext } from '../context/EventsContext';
 
 function Home() {
 
     // TODO LIGHT THEME MAYBE
 
-    const { data: events, isPending, error } = useFetch('http://localhost:5000/api/events');
+
+    const events = useContext(EventsContext)[0];
 
     useEffect(() => {
         Aos.init({ 
@@ -56,16 +57,6 @@ function Home() {
                 </div>
             </main>
             <section className="lastest-event">
-                {error &&
-                    <div className="error">
-                        <h1>Some Error occured 😭</h1>
-                    </div>
-                }
-                {isPending &&
-                    <div className="pending">
-                        <h1>Loading.... </h1>
-                    </div>
-                }
                 {events && events.length ?  (
                     <div className='loaded'>
                         <h1 data-aos="fade-up">&lt;Our lastest Event/&gt;</h1>

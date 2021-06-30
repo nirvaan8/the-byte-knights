@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 // Components
 import Event from '../components/Event/Event';
@@ -8,10 +8,14 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // Hooks
-import useFetch from '../hooks/useFetch';
+// import useFetch from '../hooks/useFetch';
+
+// Context
+import { EventsContext } from '../context/EventsContext'
 
 const Events = () => {
-    const { data: events, isPending, error } = useFetch('http://localhost:5000/api/events');
+    
+    const [events, setEvents] = useContext(EventsContext);
 
     useEffect(() => {
         Aos.init({
@@ -22,7 +26,7 @@ const Events = () => {
     return (
         <section className='events'>
             <h1>&lt;Events/&gt;</h1>
-            {error &&
+            {/* {error &&
                 <div className="error">
                     <h1>Some Error occured 😭</h1>
                 </div>
@@ -31,7 +35,7 @@ const Events = () => {
                 <div className="pending">
                     <h1>Loading.... </h1>
                 </div>
-            }
+            } */}
             {events && !events.length &&
                 <div className="no-event">
                     <h1 className='pending'>No Events right now 😥</h1>
