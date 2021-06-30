@@ -109,7 +109,7 @@
                 transform: scale(.5);
                 margin: 5px;
 
-                &:hover{
+                &:hover {
                     background-color: $light-grey;
                     transform: scale(.5);
                 }
@@ -126,9 +126,10 @@
 
 @media only screen and (max-width: 511px) {
     .contact section .left {
-        h1{
+        h1 {
             font-size: 7rem;
         }
+
         img {
             height: 200px;
         }
@@ -138,5 +139,5 @@
 @media only screen and (max-width: 400px) {
     .contact section .left img {
         height: 150px;
-    }   
+    }
 }

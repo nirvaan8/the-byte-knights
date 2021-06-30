@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Link } from "react-router-dom";
 
-// IMAGES
+// Images
 import logo from '../assets/logo.png';
 
 function Header() {

@@ -1,4 +1,4 @@
-import React, { useEffect , useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 // Animation
@@ -17,10 +17,10 @@ function Home() {
     const events = useContext(EventsContext)[0];
 
     useEffect(() => {
-        Aos.init({ 
+        Aos.init({
             duration: 1500
         });
-    } , []);
+    }, []);
 
     return (
         <div className='home'>
@@ -30,9 +30,9 @@ function Home() {
                         <div className="rect"></div>
                         <div className="rect"></div>
                     </Parallax>
-                    <Parallax speed={ 3 }>
-                    <div className="circle circle-1"></div>
-                    <div className="circle circle-2"></div>
+                    <Parallax speed={3}>
+                        <div className="circle circle-1"></div>
+                        <div className="circle circle-2"></div>
                     </Parallax>
                     <div className='bubble'></div>
                 </div>
@@ -57,14 +57,14 @@ function Home() {
                 </div>
             </main>
             <section className="lastest-event">
-                {events && events.length ?  (
+                {events && events.length ? (
                     <div className='loaded'>
                         <h1 data-aos="fade-up">&lt;Our lastest Event/&gt;</h1>
                         <img data-aos="fade-right" data-aos-delay="600" src={events[0].img} alt="" />
                         <h3 data-aos="fade-left" data-aos-delay="200">{events[0].title}</h3>
                         <p data-aos="fade-right" data-aos-delay="900">{events[0].body}</p>
                     </div>
-                ): (
+                ) : (
                     <div className='no-event'>
                         <h1>No Event Right now 😥</h1>
                     </div>

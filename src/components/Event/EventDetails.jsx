@@ -11,7 +11,7 @@ const EventDetails = ({ match }) => {
 
     const id = match.params.id;
 
-    const event  = useContext(EventsContext)[0][id - 1]
+    const event = useContext(EventsContext)[0][id - 1]
 
     useEffect(() => {
         Aos.init({

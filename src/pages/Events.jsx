@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 import { EventsContext } from '../context/EventsContext'
 
 const Events = () => {
-    
+
     const events = useContext(EventsContext)[0];
 
     useEffect(() => {
