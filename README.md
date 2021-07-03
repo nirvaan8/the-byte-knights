@@ -7,6 +7,5 @@
     * FAQ
     * Photo gallery
     * Past Events
-* Light Theme on main page and header also
+* Light Theme on main page and header also(maybe not 🙃)
 * Remake main page
-* Fix url problem on netlify
