@@ -23,44 +23,71 @@
         }
     }
 
-    .events-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .events-section {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
 
-        .event {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 10px;
-            cursor: pointer;
+        .no-events {
+            width: 100%;
+        }
 
-            h1 {
-                margin: 10px 0;
+        h2 {
+            position: relative;
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 190px;
+                height: $sm-height;
+                background-color: $pink;
             }
+        }
 
-            p {
-                max-width: 330px;
-            }
+        .events-list {
+            margin: 30px 0;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
 
-            img {
-                object-fit: cover;
-                height: 230px;
+            .event {
+
+                h1 {
+                    margin: 10px 0;
+                }
+
+                p {
+                    max-width: 330px;
+                }
+
+                img {
+                    object-fit: cover;
+                    height: 230px;
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width: 1050px) {
-    .events .events-list {
+    .events .events-section .events-list {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .events .events-list {
+@media only screen and (max-width: 760px) {
+    .events .events-section .events-list {
         grid-template-columns: 1fr;
+    }
+
+    .events{
+        padding: 40px 20px;
     }
 }

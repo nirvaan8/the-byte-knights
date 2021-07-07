@@ -10,6 +10,6 @@
     formLink: "https://forms.gle/963Qt8gYgsrZPQbE9"
 } */
 
-const events = []
+const activeEvents = []
 
-export default events;
+export default activeEvents;
