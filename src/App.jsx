@@ -8,6 +8,7 @@ import { EventsProvider } from './context/EventsContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import EventDetails from './components/Event/EventDetails';
+import Loader from './components/Loader';
 
 // PAGES
 import Home from './pages/Home';
@@ -21,6 +22,7 @@ function App() {
     <EventsProvider>
       <div className="container">
         <Router>
+          <Loader />
           <Header />
           <Switch>
             <Route exact path='/' component={Home} />
