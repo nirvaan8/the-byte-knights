@@ -40,6 +40,9 @@ function Header() {
                         <Link to="/events" className="nav-link">Events</Link>
                     </li>
                     <li className="nav-item">
+                        <Link to="/result" className="nav-link">Results</Link>
+                    </li>
+                    <li className="nav-item">
                         <Link to="/contact" className="nav-link">Contact Us</Link>
                     </li>
                 </ul>

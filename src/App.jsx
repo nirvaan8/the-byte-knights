@@ -17,6 +17,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Events from './pages/Events';
+import Results from './pages/Results';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route exact path='/about' component={About} />
               <Route exact path='/contact' component={Contact} />
+              <Route path='/result' component={Results} />
               <Route exact path='/events' component={Events} />
               <Route path='/events/:id' component={EventDetails} />
               <Route path='*' component={NotFound} />
