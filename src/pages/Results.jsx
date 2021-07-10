@@ -13,7 +13,7 @@ const Results = () => {
     const [result_delcared, set_result_delcared] = useState(false);
 
     function countdown() {
-        const lastupdateTime = new Date("July 11, 2021 00:00:00").getTime()
+        const lastupdateTime = new Date("July 11, 2021 18:00:00").getTime()
         const now = new Date().getTime();
 
         const gap = -(now - lastupdateTime);
@@ -46,31 +46,34 @@ const Results = () => {
     return (
         <div className='results'>
             {result_delcared &&
-                <section>
-                    This is the result
+                <section className='result'>
+                    <h1>&lt;Results /&gt;</h1>
+                    <div className="youtube-video">
+                        <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </section>
             }
             {!result_delcared &&
                 <section className='comming-soon'>
-                        <h1>Results are comming soon !</h1>
-                        <div className="countdown">
-                            <div>
-                                <h2>{day}</h2>
-                                <h3>Days</h3>
-                            </div>
-                            <div>
-                                <h2>{hour}</h2>
-                                <h3>Hours</h3>
-                            </div>
-                            <div>
-                                <h2>{minute}</h2>
-                                <h3>Minutes</h3>
-                            </div>
-                            <div>
-                                <h2>{second}</h2>
-                                <h3>Seconds</h3>
-                            </div>
+                    <h1>Results are comming soon !</h1>
+                    <div className="countdown">
+                        <div>
+                            <h2>{day}</h2>
+                            <h3>Days</h3>
                         </div>
+                        <div>
+                            <h2>{hour}</h2>
+                            <h3>Hours</h3>
+                        </div>
+                        <div>
+                            <h2>{minute}</h2>
+                            <h3>Minutes</h3>
+                        </div>
+                        <div>
+                            <h2>{second}</h2>
+                            <h3>Seconds</h3>
+                        </div>
+                    </div>
                     <img src={timeSvg} alt="comming soon" />
                 </section>
             }
