@@ -16,7 +16,22 @@ function About() {
             <section>
                 <div className="content">
                     <h1 data-aos="fade-right">&lt;About Us/&gt;</h1>
-                    <p data-aos="fade-right" data-aos-delay="600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi nesciunt possimus dolore molestias, voluptatibus dolorem incidunt perferendis autem. Maiores enim corporis saepe dolorem, amet reprehenderit esse fugit sunt ratione aliquam aperiam quos consequatur, necessitatibus, porro at non et ullam quam? Dignissimos voluptate rem deleniti laborum voluptatum fuga tenetur suscipit, commodi alias nesciunt iure repellendus cum, quibusdam quaerat in incidunt facilis dolores sunt vel, deserunt voluptatem libero laboriosam omnis a. Minima veritatis neque commodi ad velit esse quidem ducimus, ipsa et quam quaerat, nesciunt at corporis magnam ipsum nostrum praesentium quia quasi dolorum odit quisquam deleniti rerum. Delectus sit ut voluptatibus amet. Pariatur explicabo reiciendis, nobis eos voluptas maiores vitae animi! Vero atque, praesentium veniam eos earum dolores cupiditate rem quo ratione doloribus facilis perferendis nisi corrupti culpa recusandae quidem eius at id, tempora nesciunt impedit magnam. Amet ab deleniti architecto, libero sunt, est odit reprehenderit consequatur modi facilis exercitationem quam sint officiis laboriosam? Natus voluptatem dolor ullam cum cupiditate sunt neque ut quae. Optio ducimus ipsa, impedit praesentium eligendi deleniti laborum sit recusandae esse doloribus nulla ad veniam quae aliquam maxime quas, ea, odit quod laboriosam deserunt soluta. Ullam tempora repellendus eos quae quis. Harum accusamus facere iure voluptatum.</p>
+                    <p data-aos="fade-right" data-aos-delay="600">
+                        The club’s motto is “To Live To Learn”. Learning is not limited to school’s textbooks. It aims to provide a platform to the students to learn about all the spheres of life be it related to computers and technology or leadership and speaking skills. The vision is to contribute to the intellectual enrichment, enhance experiences, develop new skills and to promote excellence and interest in information technology in all the miraites to make them extra ordinary. We look forward to create a pool of intelligent tech wizards who can perform wonders using computers and influence others.
+                    </p>
+                    <br />
+                    <p data-aos="fade-right" data-aos-delay="600">
+                        The club’s objectives are:
+                        <br /><br />
+                        To participate and succeed in intra and inter school events
+                        Extend full support in all projects
+                        Impart training to others
+                        Share to learn
+                        Raise the bars in IT skills.
+                        Organise competitions on National and Global Levels.
+                        Trips to offices of Multinational Companies like Google and Microsoft.
+                        Regular workshops are also conducted by expertise resource person on various emerging IT skills like animation, digital photography, video editing, movie making, programming, web design and developing, network security and much more. The Club also has a youtube channel by its name where the members showcase their talents.
+                    </p>
                 </div>
                 <div className="waves" data-aos="fade-up" data-aos-delay="700">
                     <div className='wave wave1'></div>

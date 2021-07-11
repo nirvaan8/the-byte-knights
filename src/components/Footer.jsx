@@ -12,7 +12,7 @@ function Footer() {
             <div className="container-footer">
                 <div className="sec about-us">
                     <h2>About us</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus, tenetur cupiditate fugiat expedita placeat maiores dicta, debitis aperiam ipsa et nostrum. Beatae harum in exercitationem officiis? Tempora, aliquam dignissimos!</p>
+                    <p>The byte knight club which is known for their wonderful and attractive event which attracts students to participate in different cocerculum activities which provides fun, creation,of new ideas and thought.</p>
                     <ul className="sci">
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100069116769192" target="_blank" rel="noreferrer">

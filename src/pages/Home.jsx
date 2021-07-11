@@ -41,7 +41,7 @@ function Home() {
                     </Parallax>
                     <Parallax speed={5}>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cum nam quasi quos officiis odio placeat earum laudantium voluptates illum?
+                            The byte knight club which is known for their wonderful and attractive event which attracts students to participate in different cocerculum activities which provides fun, creation,of new ideas and thought.
                         </p>
                     </Parallax>
                     <Parallax speed={3}>
