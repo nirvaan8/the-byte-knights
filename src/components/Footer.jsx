@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import fb from '../assets/fb.svg';
 import insta from '../assets/insta.svg';
 import yt from '../assets/yt.svg';
+import github from '../assets/github.svg';
 
 function Footer() {
     return (
@@ -29,6 +30,11 @@ function Footer() {
                                 <img src={yt} alt="youtube" />
                             </a>
                         </li>
+                        <li>
+                            <a href="https://github.com/TheByteKnights2021/" target="_blank" rel="noreferrer">
+                                <img src={github} alt="github" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -36,10 +42,10 @@ function Footer() {
                     <h2>Quick Links</h2>
                     <ul>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/events">Events</Link></li>
                         <li><a href="https://www.facebook.com/profile.php?id=100069116769192">Facebook</a></li>
                         <li><a href="https://www.instagram.com/thebyteknights/">Instagram</a></li>
                         <li><a href="https://www.youtube.com/channel/UCqDxCutv0nzcx0uZrFM76lA">Youtube</a></li>
+                        <li><Link to="https://github.com/TheByteKnights2021/">Github</Link></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>

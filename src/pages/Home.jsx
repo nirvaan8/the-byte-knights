@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 // Animation
@@ -7,11 +7,11 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // Context
-import { PastEventsContext } from '../context/PastEventsContext';
+import pastEvents from '../data/pastEvents';
 
 function Home() {
     
-    const events = useContext(PastEventsContext)[0];
+    const events = pastEvents;
 
     useEffect(() => {
         Aos.init({

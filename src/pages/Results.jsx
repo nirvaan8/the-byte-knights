@@ -49,7 +49,7 @@ const Results = () => {
                 <section className='result'>
                     <h1>&lt;Results /&gt;</h1>
                     <div className="youtube-video">
-                        <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </section>
             }
