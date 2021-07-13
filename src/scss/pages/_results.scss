@@ -1,31 +1,27 @@
 .results {
     padding: 40px 70px;
 
-    .result{
+    .result {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
 
-        h1{
+        h1 {
             font-size: 40px;
-                position: relative;
-                font-weight: 500;
-                margin-bottom: 30px;
+            position: relative;
+            font-weight: 500;
+            margin-bottom: 30px;
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                    width: 210px;
-                    height: $sm-height;
-                    background-color: $pink;
-                }
-        }
-
-        .youtube-video{
-
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 210px;
+                height: $sm-height;
+                background-color: $pink;
+            }
         }
     }
 
@@ -80,8 +76,8 @@
 @media only screen and(max-width: 710px) {
     .results {
         .comming-soon {
-            h1{
-                &::before{
+            h1 {
+                &::before {
                     display: none;
                 }
             }
@@ -90,18 +86,35 @@
 }
 
 @media only screen and(max-width: 580px) {
-    .results{
+    .results {
         padding: 20px 70px;
-        .comming-soon{
-            .countdown{
+
+        .comming-soon {
+            .countdown {
                 flex-wrap: wrap;
-                div{
+
+                div {
                     margin: 50px 20px;
                 }
             }
-            img{
+
+            img {
                 height: 200px;
             }
         }
+    }
+}
+
+@media only screen and(max-width: 720px) {
+    .youtube-video iframe {
+        width: 370px;
+        height: 300px;
+    }
+}
+
+@media only screen and(max-width: 720px) {
+    .youtube-video iframe {
+        width: 300px;
+        height: 200px;
     }
 }

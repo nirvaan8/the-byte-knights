@@ -183,8 +183,8 @@ $sq-side: 350px;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .home section img {
+@media only screen and (max-width: 568px) {
+    .home section .loaded img {
         height: 200px;
     }
 }

@@ -68,7 +68,7 @@
                 }
 
                 img {
-                    object-fit: cover;
+                    object-fit: contain;
                     height: 230px;
                 }
             }
@@ -82,12 +82,28 @@
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 786px) {
     .events .events-section .events-list {
         grid-template-columns: 1fr;
     }
 
-    .events{
+    .events {
         padding: 40px 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .events .events-section .events-list .event {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            height: 200px;
+        }
     }
 }
