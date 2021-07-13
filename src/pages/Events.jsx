@@ -8,18 +8,11 @@ import PastEvent from '../components/Event/PastEvent';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-// Context
-import { EventsContext } from '../context/EventsContext'
-import { PastEventsContext } from '../context/PastEventsContext';
+// Data
+import events from '../data/events';
+import pastEvents from '../data/pastEvents';
 
 const Events = () => {
-
-    const events = useContext(EventsContext)[0];
-
-    const pastEvents = useContext(PastEventsContext)[0];
-
-    console.log(pastEvents);
-
     useEffect(() => {
         Aos.init({
             duration: 800,
