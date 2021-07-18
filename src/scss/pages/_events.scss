@@ -7,19 +7,10 @@
     padding-bottom: 60px;
 
     >h1 {
-        font-size: 4rem;
-        font-weight: 500;
-        position: relative;
-        margin-bottom: 60px;
+        @include underline-heading;
 
         &::before {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
             width: 190px;
-            height: $sm-height;
-            background-color: $pink;
         }
     }
 
@@ -35,19 +26,11 @@
         }
 
         h2 {
-            position: relative;
+            @include underline-heading;
             font-size: 3rem;
-            font-weight: 400;
-            margin-bottom: 20px;
 
             &::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
                 width: 190px;
-                height: $sm-height;
-                background-color: $pink;
             }
         }
 
