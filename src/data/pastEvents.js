@@ -9,10 +9,16 @@
     body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fuga et similique, doloribus aperiam, possimus autem minus optio perferendis quaerat provident? Aliquid dolor, repudiandae numquam doloremque a praesentium aliquam quas sapiente nam assumenda recusandae quibusdam nisi officia possimus nihil delectus quos fugiat, laudantium consequatur cumque sed architecto et? Labore, consectetur similique corrupti, soluta aliquid accusantium dolor ea et laborum debitis veritatis ad. Eligendi, veritatis consequuntur! Id rerum quos at veritatis eaque assumenda consequatur libero odio deleniti minima saepe nemo ad, dignissimos doloribus voluptatibus sed laudantium quas minus dolore ullam eius non? Qui nemo tempore eaque ratione aspernatur excepturi, aliquam, unde cupiditate ipsa rerum nesciunt eligendi harum alias quia fuga reiciendis consequuntur error odit eius.'
 } */
 
+import Img1 from '../assets/events/1.jpg';
+import Img2 from '../assets/events/2.jpg';
+import Img3 from '../assets/events/3.jpg';
+import Img4 from '../assets/events/4.jpg';
+import Img5 from '../assets/events/5.jpg';
+
 const pastEvents = [{
         id: 1,
         title: 'Social Debate',
-        img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/192807185_103789351934957_660614219760344622_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=B2qnXDLuDCYAX8IXd4W&tn=6jJixHAZawc1dcid&_nc_ht=scontent.fdel46-1.fna&oh=7c5aed63cca6424a9f68124d808cf13b&oe=60EEC1C6',
+        img: Img1,
         body: `Description of the competition:-
         and had an opinion to ban these apps. There were two teams:Team A and
         Team A had 3 participants and it was a
@@ -26,7 +32,7 @@ const pastEvents = [{
     {
         id: 2,
         title: `Let's Code`,
-        img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/195273491_103927251921167_5211818051828971576_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=cT46UgcewsYAX8Qf3qi&tn=6jJixHAZawc1dcid&_nc_ht=scontent.fdel46-1.fna&oh=9b85359aaa1342e2de4c68349534fcf4&oe=60EFBB2B',
+        img: Img2,
         body: `In this event, students have to
         make a website using HTML.
         2. Topics were given on the spot
@@ -44,7 +50,7 @@ const pastEvents = [{
     {
         id: 3,
         title: `Made To Mingle`,
-        img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/189593160_103928328587726_4233691751786710817_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=z44mJhlLViIAX-3UuK4&_nc_ht=scontent.fdel46-1.fna&oh=dda5b02063731d8e2533fa9e516e14e3&oe=60EF1C13',
+        img: Img3,
         body: `In this event, students have to
         make a power point presentation
         (ppt).
@@ -68,7 +74,7 @@ const pastEvents = [{
     {
         id: 4,
         title: `Space Monk`,
-        img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/196131442_103927011921191_6161945476350124570_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=178qpcCia18AX97WQYx&_nc_ht=scontent.fdel46-1.fna&oh=c45d355b98f727a0dd7854a719fb962f&oe=60F04185',
+        img: Img4,
         body: `This event was a gaming competition in
         which the participants had to play
         "Among us
@@ -85,7 +91,7 @@ const pastEvents = [{
     {
         id: 5,
         title: `Magic  Painting`,
-        img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/191897633_103927588587800_2268537723800892709_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0xRVfO3Fg-QAX8B7J1X&_nc_ht=scontent.fdel46-1.fna&oh=343d73fb28ef4258214d39697da7a7ea&oe=60EEDE1E',
+        img: Img5,
         body: `In this event, the participants made
         a drawing using Ms Paint on their
         computer systems.
