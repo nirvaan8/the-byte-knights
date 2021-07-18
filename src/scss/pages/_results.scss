@@ -8,19 +8,11 @@
         flex-direction: column;
 
         h1 {
-            font-size: 40px;
-            position: relative;
-            font-weight: 500;
+            @include underline-heading;
             margin-bottom: 30px;
 
             &::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
                 width: 210px;
-                height: $sm-height;
-                background-color: $pink;
             }
         }
     }
@@ -32,19 +24,11 @@
         flex-direction: column;
 
         h1 {
-            font-size: 4rem;
-            font-weight: 500;
-            position: relative;
+            @include underline-heading;
             margin-bottom: 40px;
 
             &::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
                 width: 550px;
-                height: $sm-height;
-                background-color: $pink;
             }
         }
 

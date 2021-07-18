@@ -22,7 +22,7 @@ function About() {
                     <br />
                     <p data-aos="fade-right" data-aos-delay="600">
                         The club’s objectives are:
-                        <br /><br />
+                        <br />
                         To participate and succeed in intra and inter school events
                         Extend full support in all projects
                         Impart training to others
@@ -33,7 +33,7 @@ function About() {
                         Regular workshops are also conducted by expertise resource person on various emerging IT skills like animation, digital photography, video editing, movie making, programming, web design and developing, network security and much more. The Club also has a youtube channel by its name where the members showcase their talents.
                     </p>
                 </div>
-                <div className="waves" data-aos="fade-up" data-aos-delay="700">
+                <div className="waves">
                     <div className='wave wave1'></div>
                     <div className='wave wave2'></div>
                 </div>

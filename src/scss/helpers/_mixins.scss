@@ -1,0 +1,16 @@
+@mixin underline-heading () {
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 230px;
+        height: $sm-height;
+        background-color: $pink;
+    }
+}

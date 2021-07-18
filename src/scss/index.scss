@@ -5,6 +5,9 @@
 @import './base/base';
 @import './base/typography';
 
+// mixins
+@import './helpers/mixins';
+
 // components styles
 @import './components/buttons';
 @import './components/links';

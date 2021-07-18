@@ -13,20 +13,11 @@
             padding-bottom: 0;
 
             h1 {
-                font-size: 40px;
-                position: relative;
-                font-weight: 500;
-                margin-bottom: 30px;
+                @include underline-heading;
+            }
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                    width: 230px;
-                    height: $sm-height;
-                    background-color: $pink;
-                }
+            p{
+                font-size: 1.4rem;
             }
         }
 
@@ -42,9 +33,12 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                top: 0;
+                left: -120%;
                 background-repeat: no-repeat;
                 background-size: 100% 100px;
                 transform: scale(3.6);
+                animation: fadeIn 1.3s .5s ease-out 1 both;
 
                 &.wave1 {
                     background-image: url('../../assets/pink-wave.svg');
@@ -55,6 +49,15 @@
                 }
             }
         }
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        left: -120%;
+    }
+    100%{
+        left: 0;
     }
 }
 
