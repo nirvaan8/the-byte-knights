@@ -41,7 +41,7 @@ function Home() {
                     </Parallax>
                     <Parallax speed={5}>
                         <p>
-                            The byte knight club which is known for their wonderful and attractive event which attracts students to participate in different cocerculum activities which provides fun, creation,of new ideas and thought.
+                            The byte knight club which is known for their wonderful and attractive event which attracts students to participate in different cocerculum activities which provides fun, creation,of new ideas and thoughts.
                         </p>
                     </Parallax>
                     <Parallax speed={3}>
