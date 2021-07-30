@@ -1,6 +1,6 @@
 # The Byte Knights
 
-[Website link](https://thebyteknights.netlify.app/)
+[Website link](thebyteknights.com)
 
 ## Todos
 * Pages
