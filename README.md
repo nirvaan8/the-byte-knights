@@ -14,3 +14,5 @@
 * Add LICENSE
 * ADD Copyright in footer and README.md
 * 404 page fix
+* Testing using jest
+* tilt.js on cards
