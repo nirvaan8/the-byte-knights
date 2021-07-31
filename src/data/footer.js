@@ -57,7 +57,7 @@ const footerObj = {
                 svg: emailSvg,
                 alt: 'email',
                 text:  `byteknights.mms@gmail.com`,
-                link: 'mailto:byteknights.mms@gmail.com'
+                link: 'https://mailto:byteknights.mms@gmail.com'
             }
         ]
     }
