@@ -15,3 +15,4 @@
 * ADD Copyright in footer and README.md
 * mailto
 * open google maps on clicking address
+* 404 page fix
