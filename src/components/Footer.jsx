@@ -29,7 +29,7 @@ function Footer() {
                         <li><a href="https://www.facebook.com/profile.php?id=100069116769192">Facebook</a></li>
                         <li><a href="https://www.instagram.com/thebyteknights/">Instagram</a></li>
                         <li><a href="https://www.youtube.com/channel/UCqDxCutv0nzcx0uZrFM76lA">Youtube</a></li>
-                        <li><Link to="https://github.com/TheByteKnights2021/">Github</Link></li>
+                        <li><a href="https://github.com/TheByteKnights2021/">Github</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
