@@ -7,6 +7,9 @@ import 'aos/dist/aos.css';
 // Images
 import contactSvg from '../assets/contact.svg';
 
+// Data 
+import contactObj from '../data/contact';
+
 function Contact() {
 
     useEffect(() => {
@@ -19,8 +22,8 @@ function Contact() {
         <div className='contact'>
             <section>
                 <div className="left" data-aos="fade-right" data-aos-delay="400">
-                    <h1>Want to talk to us ?</h1>
-                    <p><span>byteknights</span>.mms@gmail.com</p>
+                    <h1>{contactObj.headline}</h1>
+                    <p><span>{contactObj.email.p1}</span>{contactObj.email.p2}</p>
                     <img src={contactSvg} alt="" />
                 </div>
                 <div className="right" data-aos="fade-up" data-aos-delay="600">

@@ -9,10 +9,10 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // Data
-import events from '../data/events';
-import pastEvents from '../data/pastEvents';
+import EventsObj from '../data/events';
 
 const Events = () => {
+
     useEffect(() => {
         Aos.init({
             duration: 800,
@@ -20,19 +20,21 @@ const Events = () => {
         });
     }, [])
 
+    const { activeEvents , pastEvents } = EventsObj;
+
     return (
         <section className='events'>
-            <h1 data-aos="fade-down">&lt;Events/&gt;</h1>
+            <h1 data-aos="fade-down">&lt;{EventsObj.headline}/&gt;</h1>
             <div className='active-events events-section'>
-                <h2>Active Events</h2>
-                {events && !events.length &&
+                <h2>{EventsObj.activeEventsHeading}</h2>
+                {activeEvents && !activeEvents.length &&
                     <div className="no-event">
                         <h1 data-aos="fade-right" data-aos-delay="600" className='no-events'>No Events right now 😥</h1>
                     </div>
                 }
-                {events &&
+                {activeEvents &&
                     <div className="events-list" data-aos="fade-up" data-aos-delay="600">
-                        {events.map(event => (
+                        {activeEvents.map(event => (
                             <Event event={event} key={event.id} />
                         ))}
                     </div>
@@ -40,7 +42,7 @@ const Events = () => {
             </div>
 
             <div className='past-events events-section'>
-                <h2>Past Events</h2>
+                <h2>{EventsObj.pastEventsHeading}</h2>
                 {pastEvents &&
                     <div className="events-list" data-aos="fade-up" data-aos-delay="600">
                         {pastEvents.map(event => (

@@ -180,4 +180,17 @@ $sq-side: 350px;
     .home section .loaded img {
         height: 200px;
     }
+    .home main .content button{
+        background-color: $pink;
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    .home main .content {
+        left: 20px;
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
 }
