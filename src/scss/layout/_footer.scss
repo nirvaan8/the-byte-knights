@@ -120,10 +120,16 @@ footer.footer {
             .info {
                 position: relative;
 
-                li span svg {
+                li span img {
                     height: $icon-size / 2;
                     width: $icon-size / 2;
                     margin: 0 3px;
+                    filter: invert(1);
+                }
+
+                li{
+                    display: flex;
+                    margin: 5px 0;
                 }
 
                 li span:nth-child(2) {

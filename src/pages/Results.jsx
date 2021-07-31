@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 // Images
 import timeSvg from '../assets/time.svg';
 
+// Data
+import ResultsObj from '../data/results';
+
 const Results = () => {
 
     const [day, setDay] = useState();
@@ -13,7 +16,7 @@ const Results = () => {
     const [result_delcared, set_result_delcared] = useState(false);
 
     function countdown() {
-        const lastupdateTime = new Date("July 11, 2021 18:00:00").getTime()
+        const lastupdateTime = new Date(ResultsObj.date).getTime()
         const now = new Date().getTime();
 
         const gap = -(now - lastupdateTime);
@@ -47,7 +50,7 @@ const Results = () => {
         <div className='results'>
             {result_delcared &&
                 <section className='result'>
-                    <h1>&lt;Results /&gt;</h1>
+                    <h1>&lt;{ResultsObj.headline} /&gt;</h1>
                     <div className="youtube-video">
                         <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
@@ -55,7 +58,7 @@ const Results = () => {
             }
             {!result_delcared &&
                 <section className='comming-soon'>
-                    <h1>Results are comming soon !</h1>
+                    <h1>{ResultsObj.commingSoonHeading}</h1>
                     <div className="countdown">
                         <div>
                             <h2>{day}</h2>

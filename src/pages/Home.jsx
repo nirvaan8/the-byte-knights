@@ -6,12 +6,13 @@ import Parallax from 'react-rellax';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-// Context
-import pastEvents from '../data/pastEvents';
+// Data
+import HomeObj from '../data/home';
+import EventsObj from '../data/events'
 
 function Home() {
     
-    const events = pastEvents;
+    const events = EventsObj.pastEvents;
 
     useEffect(() => {
         Aos.init({
@@ -36,18 +37,18 @@ function Home() {
                 <div className='content'>
                     <Parallax speed={7}>
                         <h1>
-                            The Byte Knights
+                            {HomeObj.headline1}
                         </h1>
                     </Parallax>
                     <Parallax speed={5}>
                         <p>
-                            The byte knight club which is known for their wonderful and attractive event which attracts students to participate in different cocerculum activities which provides fun, creation,of new ideas and thoughts.
+                            {HomeObj.paragraph}
                         </p>
                     </Parallax>
                     <Parallax speed={3}>
                         <button>
                             <Link to="/about">
-                                Read More
+                                {HomeObj.btnText}
                             </Link>
                         </button>
                     </Parallax>
@@ -56,14 +57,14 @@ function Home() {
             <section className="lastest-event">
                 {events && events.length ? (
                     <div className='loaded'>
-                        <h1 data-aos="fade-up">&lt;Our lastest Event/&gt;</h1>
+                        <h1 data-aos="fade-up">&lt;{HomeObj.headline2}/&gt;</h1>
                         <img data-aos="fade-right" data-aos-delay="600" src={events[events.length - 1].img} alt="" />
                         <h3 data-aos="fade-left" data-aos-delay="200">{events[events.length - 1].title}</h3>
                         <p data-aos="fade-right" data-aos-delay="900">{events[events.length - 1].body}</p>
                     </div>
                 ) : (
                     <div className='no-event'>
-                        <h1>No Event Right now 😥</h1>
+                        <h1>{HomeObj.noEventText}</h1>
                     </div>
                 )
                 }
