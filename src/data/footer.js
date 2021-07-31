@@ -49,13 +49,15 @@ const footerObj = {
                 alt: 'location',
                 text:  `Shaheed Captain Anuj Nayyar Marg,
                 Block B, BB Block, Janakpuri,
-                New Delhi, Delhi 110058`
+                New Delhi, Delhi 110058`,
+                link: 'https://www.google.com/maps/place/Mira+Model+School/@28.6312261,77.0916841,17z/data=!3m1!4b1!4m5!3m4!1s0x390d04bc15555555:0xc67001beb4b7d7fa!8m2!3d28.6312214!4d77.0938728'
             },
             {
                 id: 2,
                 svg: emailSvg,
                 alt: 'email',
-                text:  `byteknights.mms@gmail.com`
+                text:  `byteknights.mms@gmail.com`,
+                link: 'mailto:byteknights.mms@gmail.com'
             }
         ]
     }
